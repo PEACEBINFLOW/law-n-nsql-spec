@@ -1,0 +1,4 @@
+SELECT tower_id, pattern, latency
+FROM network.routes
+WHERE device = "0xA4C1"
+AND signal_quality > 0.85;
