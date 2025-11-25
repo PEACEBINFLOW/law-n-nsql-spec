@@ -1,0 +1,22 @@
+
+```json
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Law-N Device Schema",
+  "type": "object",
+  "properties": {
+    "deviceId": { "type": "string" },
+    "deviceType": { "type": "string" },
+    "vendor": { "type": "string" },
+    "model": { "type": "string" },
+    "supportedGLayers": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "networkInterfaces": {
+      "type": "array",
+      "items": { "type": "object" }
+    }
+  },
+  "required": [ "deviceId", "deviceType" ]
+}
