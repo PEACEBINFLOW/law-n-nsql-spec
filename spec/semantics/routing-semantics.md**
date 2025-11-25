@@ -1,0 +1,11 @@
+# Routing Semantics
+
+Routing queries work on the `network.routes` table.
+
+## SELECT Example
+
+```sql
+SELECT tower_id, frequency, latency
+FROM network.routes
+WHERE device = "0xA4C1"
+AND pattern MATCHES "PulseShift-*";
