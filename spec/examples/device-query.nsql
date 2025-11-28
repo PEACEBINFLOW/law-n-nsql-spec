@@ -1,0 +1,6 @@
+-- List phones in a region that support 5G
+SELECT deviceId, deviceType, supportedGLayers
+FROM network.devices
+WHERE deviceType = "phone"
+  AND "5G" = ANY(supportedGLayers)
+  AND regionCode = "BW";
