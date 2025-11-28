@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Law-N Frequency Schema",
+  "type": "object",
+  "properties": {
+    "center_frequency_hz": { "type": "number" },
+    "band_name": { "type": "string" },
+    "harmonics": {
+      "type": "array",
+      "items": { "type": "number" }
+    },
+    "stability": { "type": "number" },
+    "drift_hz": { "type": "number" }
+  },
+  "required": ["center_frequency_hz", "band_name"]
+}
