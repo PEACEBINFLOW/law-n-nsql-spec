@@ -1,0 +1,16 @@
+# Device Semantics
+
+Device-focused N-SQL queries operate on:
+
+- `network.devices`
+- `network.routes` (device → tower relationships)
+- `network.patterns` (per-device patterns)
+
+---
+
+## 1. Basic Device Query
+
+```sql
+SELECT deviceId, deviceType, supportedGLayers
+FROM network.devices
+WHERE regionCode = "BW";
