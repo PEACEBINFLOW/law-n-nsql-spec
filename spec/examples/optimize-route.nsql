@@ -1,0 +1,4 @@
+-- Optimize a route between two devices with mid-band 5G preference
+OPTIMIZE ROUTE "device_A" TO "device_B"
+PREFER frequency_band = "mid-band-5G"
+MINIMIZE latency;
