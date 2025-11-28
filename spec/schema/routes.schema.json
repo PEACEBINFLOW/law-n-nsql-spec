@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Law-N Route Schema",
+  "type": "object",
+  "properties": {
+    "route_id": { "type": "string" },
+    "device": { "type": "string" },
+    "tower_id": { "type": "string" },
+    "frequency": { "type": "string" },
+    "g_layer": { "type": "string" },
+    "latency_ms": { "type": "number" },
+    "signal_quality": { "type": "number" },
+    "timestamp": { "type": "string", "format": "date-time" },
+    "pattern": { "type": "string" }
+  },
+  "required": [
+    "route_id",
+    "device",
+    "tower_id",
+    "frequency",
+    "g_layer",
+    "latency_ms",
+    "signal_quality",
+    "timestamp"
+  ]
+}
