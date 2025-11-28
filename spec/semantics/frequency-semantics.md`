@@ -1,0 +1,18 @@
+# Frequency Semantics
+
+This document defines the semantics of **frequency-related** N-SQL statements
+and conditions.
+
+Frequency logic operates primarily over:
+
+- `network.frequencies`
+- `network.routes.frequency`
+- `network.patterns` (harmonics, drift, stability)
+
+---
+
+## 1. INSPECT FREQUENCY
+
+```sql
+INSPECT FREQUENCY 3.42GHz
+RETURN harmonics, stability, drift;
