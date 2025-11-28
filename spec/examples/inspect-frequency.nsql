@@ -1,0 +1,3 @@
+-- Inspect a specific frequency band
+INSPECT FREQUENCY 3.42GHz
+RETURN harmonics, stability, drift;
