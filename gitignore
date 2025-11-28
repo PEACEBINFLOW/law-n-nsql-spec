@@ -1,6 +1,39 @@
 # OS
 .DS_Store
 Thumbs.db
-...
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Python (if you ever add tools)
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+.env
+
+# Node (if you add docs tooling)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-lock.yaml
+package-lock.json
+
+# Build / dist
 dist/
+build/
 out/
+
+# Logs
+logs/
+*.log
+
+# Misc
+*.tmp
+*.bak
+*.orig
